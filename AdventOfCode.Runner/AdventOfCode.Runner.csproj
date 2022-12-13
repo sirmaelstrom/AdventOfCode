@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Company>HeathDev</Company>
+		<OutputType>Exe</OutputType>
+		<LangVersion>latestmajor</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="AdventOfCodeCommon.Attributes" />
+		<Using Include="AdventOfCodeCommon.Interfaces" />
+		<Using Include="AdventOfCodeCommon.Models" />
+		<Using Include="SuperLinq" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
+		<PackageReference Include="docopt.net" Version="0.8.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+		<PackageReference Include="Spectre.Console" Version="0.45.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\AdventOfCode.Common\AdventOfCode.Common.csproj" />
+		<ProjectReference Include="..\Puzzles\2021\AdventOfCode2021\AdventOfCode2021.csproj" />
+		<ProjectReference Include="..\Puzzles\2022\AdventOfCode2022\AdventOfCode2022.csproj" />
+	</ItemGroup>
+
+</Project>
